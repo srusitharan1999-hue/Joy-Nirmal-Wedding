@@ -98,3 +98,6 @@ function createPetal(){
 }
 
 setInterval(createPetal, 700);
+function openInvitation(){
+    document.getElementById("loader").style.display = "none";
+}
