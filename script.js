@@ -101,3 +101,43 @@ setInterval(createPetal, 700);
 function openInvitation(){
     document.getElementById("loader").style.display = "none";
 }
+// Open invitation animation
+function openInvitation(){
+
+    const loader = document.getElementById("loader");
+
+    loader.classList.add("hide");
+
+    setTimeout(()=>{
+        loader.style.display="none";
+    },1000);
+
+}
+
+
+// Falling flower petals
+function createPetal(){
+
+    const petal = document.createElement("div");
+
+    petal.className="petal";
+    petal.innerHTML="🌸";
+
+    petal.style.left = Math.random()*100 + "vw";
+    petal.style.animationDuration =
+    (6 + Math.random()*5) + "s";
+
+    petal.style.fontSize =
+    (15 + Math.random()*15) + "px";
+
+    document.body.appendChild(petal);
+
+
+    setTimeout(()=>{
+        petal.remove();
+    },12000);
+
+}
+
+
+setInterval(createPetal,800);
