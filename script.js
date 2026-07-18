@@ -74,3 +74,28 @@ document.querySelectorAll("section").forEach(section => {
   observer.observe(section);
 
 });
+function openInvitation(){
+    document.getElementById("loader").classList.add("hide");
+}
+
+
+// Flower petals
+function createPetal(){
+
+let petal=document.createElement("div");
+
+petal.className="petal";
+petal.innerHTML="🌸";
+
+petal.style.left=Math.random()*100+"%";
+petal.style.animationDuration=(5+Math.random()*5)+"s";
+
+document.body.appendChild(petal);
+
+setTimeout(()=>{
+petal.remove();
+},10000);
+
+}
+
+setInterval(createPetal,500);
