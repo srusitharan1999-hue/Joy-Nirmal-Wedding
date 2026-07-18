@@ -82,20 +82,19 @@ function openInvitation(){
 // Flower petals
 function createPetal(){
 
-let petal=document.createElement("div");
+    let petal = document.createElement("div");
 
-petal.className="petal";
-petal.innerHTML="🌸";
+    petal.className = "petal";
+    petal.innerHTML = "🌸";
 
-petal.style.left=Math.random()*100+"%";
-petal.style.animationDuration=(5+Math.random()*5)+"s";
+    petal.style.left = Math.random() * 100 + "vw";
+    petal.style.animationDuration = (5 + Math.random() * 5) + "s";
 
-document.body.appendChild(petal);
+    document.body.appendChild(petal);
 
-setTimeout(()=>{
-petal.remove();
-},10000);
-
+    setTimeout(function(){
+        petal.remove();
+    }, 10000);
 }
 
-setInterval(createPetal,500);
+setInterval(createPetal, 700);
