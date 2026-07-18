@@ -141,3 +141,30 @@ function createPetal(){
 
 
 setInterval(createPetal,800);
+// Scroll reveal animation
+
+const sections = document.querySelectorAll(
+".invitation, .couple, .countdown, .events, .rsvp, footer"
+);
+
+sections.forEach(section=>{
+    section.classList.add("reveal");
+});
+
+
+window.addEventListener("scroll",()=>{
+
+    sections.forEach(section=>{
+
+        const position =
+        section.getBoundingClientRect().top;
+
+        if(position < window.innerHeight - 100){
+
+            section.classList.add("active");
+
+        }
+
+    });
+
+});
