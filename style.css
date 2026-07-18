@@ -747,3 +747,15 @@ visibility:hidden;
 transition:1s ease;
 
 }
+/* Scroll Reveal Animation */
+
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
