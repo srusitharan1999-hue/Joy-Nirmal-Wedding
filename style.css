@@ -616,18 +616,22 @@ visibility:hidden;
 /* Falling petals */
 
 .petal{
-position:fixed;
-top:-20px;
-font-size:25px;
-animation:fall linear infinite;
-z-index:2;
+    position: fixed;
+    top: -50px;
+    font-size: 25px;
+    z-index: 999;
+    pointer-events: none;
+    animation: fall linear forwards;
 }
 
 @keyframes fall{
-0%{
-transform:translateY(-10vh) rotate(0deg);
-}
-100%{
-transform:translateY(110vh) rotate(360deg);
-}
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
 }
