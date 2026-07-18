@@ -635,3 +635,70 @@ visibility:hidden;
         opacity: 0;
     }
 }
+/* Elegant Opening Screen */
+
+#loader{
+    background:
+    linear-gradient(
+    rgba(255,248,235,0.95),
+    rgba(255,248,235,0.95)
+    ),
+    url("invitation.JPG");
+
+    background-size:cover;
+    background-position:center;
+}
+
+
+.opening-card{
+    text-align:center;
+    padding:40px 25px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.8);
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+
+.small-title{
+    font-family:'Cinzel',serif;
+    letter-spacing:2px;
+    color:#8b6b23;
+}
+
+
+.opening-card h1{
+    font-family:'Great Vibes',cursive;
+    font-size:65px;
+    color:#b8860b;
+    margin:20px 0;
+}
+
+
+.opening-card h1 span{
+    font-size:40px;
+}
+
+
+.line{
+    width:80px;
+    height:2px;
+    background:#b8860b;
+    margin:20px auto;
+}
+
+
+.invite-text{
+    font-family:'Poppins',sans-serif;
+    line-height:1.8;
+}
+
+
+.opening-card button{
+    margin-top:25px;
+    padding:15px 35px;
+    border-radius:40px;
+    border:none;
+    background:#b8860b;
+    color:white;
+    font-size:16px;
+}
